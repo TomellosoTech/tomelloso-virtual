@@ -10,6 +10,15 @@
         width: 100%;
         height: 250px;
     }
+    #banner .actions{
+        flex-direction: column;
+    }
+    #banner .actions li{
+        padding-bottom:1rem;
+    }
+    #banner .actions a{
+        width:100%;
+    }
 }
 /*
 	Editorial by HTML5 UP
