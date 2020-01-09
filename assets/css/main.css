@@ -19,6 +19,12 @@
     #banner .actions a{
         width:100%;
     }
+    .tour iframe{
+        height: 540px
+    }
+    .tour{
+        text-align: center;
+    }
 }
 /*
 	Editorial by HTML5 UP
