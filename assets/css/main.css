@@ -9,7 +9,7 @@
     position: absolute;
     z-index: 2;
     color: #565656;
-    top: 190px;
+    top: 75%;
     right: 0;
     background-color: #ffffffab;
     padding: .5rem 1rem;
@@ -18,6 +18,17 @@
     font-weight: 500;
     font-size: .8rem;
     letter-spacing: 1px;
+}
+@media screen and (max-width: 1200px){
+    .upcoming{
+        top: 70%;
+        font-size: .7rem;
+    }
+}
+@media screen and (max-width: 950px){
+    .upcoming{
+        top: 60%;
+    }
 }
 @media screen and (max-width: 480px) and (orientation: portrait){
     iframe{
