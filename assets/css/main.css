@@ -19,7 +19,7 @@
     font-size: .8rem;
     letter-spacing: 1px;
 }
-@media screen and (max-width: 1240px){
+@media screen and (max-width: 1240px) and (orientation: landscape){
     .upcoming{
         top: 70%;
         font-size: .7rem;
