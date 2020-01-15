@@ -38,6 +38,10 @@
     width: 100%;
     background-position: center;
     background-size: cover;
+    color: #ffffff00
+}
+a.map:hover{
+    color: #ffffff00 !important;
 }
 @media screen and (max-width: 1240px) and (orientation: landscape){
     .upcoming{
