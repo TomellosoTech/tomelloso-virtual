@@ -19,6 +19,26 @@
     font-size: .8rem;
     letter-spacing: 1px;
 }
+.attribution{
+    position: absolute;
+    z-index: 2;
+    color: #3232329c;
+    bottom: 5px;
+    right: 5px;
+    background-color: #ffffffab;
+    padding: 0;
+    font-family: "Roboto Slab", serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+}
+.map{
+    display: block;
+    height: 295px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
 @media screen and (max-width: 1240px) and (orientation: landscape){
     .upcoming{
         top: 70%;
