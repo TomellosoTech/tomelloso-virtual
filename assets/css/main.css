@@ -8,7 +8,9 @@
 .acenter{
     text-align: center;
 }
-
+.about ul{
+    margin-left: 2rem;
+}
 .upcoming {
 	position: absolute;
 	z-index: 2;
