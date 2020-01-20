@@ -1,3 +1,17 @@
+window.calcRT = ev => {
+  const wordsPerMinute = 300; // Average case.
+  let result;
+
+  let textLength = ev.split(" ").length; // Split by words
+  if(textLength > 0){
+      console.log("textLength=",textLength)
+    let value = Math.round(textLength / wordsPerMinute);
+    result = `~${value} min`;
+  }
+    $('#readingTime').text(result);
+    console.log(result);
+};
+
 (function($) {
 
 	/**
@@ -583,5 +597,9 @@
 			});
 
 	};
+    if($("#readingTime")){
+        calcRT($(".speech").text())
 
+
+    }
 })(jQuery);

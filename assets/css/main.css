@@ -5,6 +5,9 @@
 	Customization TomellosoTech
 	tomellosotech.org | @TomellosoTech
 */
+html{
+    scroll-behavior: smooth;
+}
 .acenter{
     text-align: center;
 }
@@ -15,7 +18,7 @@
 	position: absolute;
 	z-index: 2;
 	color: #565656;
-	top: 75%;
+	bottom: 15%;
 	right: 0;
 	background-color: #ffffffab;
 	padding: .5rem 1rem;
@@ -37,7 +40,7 @@
 	font-family: "Roboto Slab", serif;
 	text-transform: uppercase;
 	font-weight: 500;
-	font-size: 12px;
+	font-size: 10px;
 }
 .map-container{
     position: relative;
@@ -48,7 +51,7 @@
 }
 .map {
 	display: block;
-	height: 295px;
+	height: 200px;
 	width: 100%;
 	background-position: center;
 	background-size: cover;
