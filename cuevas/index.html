@@ -239,20 +239,13 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
     </div>
     <div class="textos">
         <p>
-            <strong><i class="far fa-clock"></i> Tiempo de lectura aproximada:</strong> <span id="readingTime">X</span>
-             | <strong><i class="fas fa-volume-up"></i> Escuchar:</strong> <span onclick="javascript:play()"><i class="far fa-play-circle"></i> <i class="far fa-pause-circle"></i> <i class="far fa-stop-circle"></i></span>
+            <strong><i class="far fa-clock"></i> Tiempo de lectura aproximada:</strong> <span id="readingTime">X</span> |
+            <strong>
+                <i class="fas fa-volume-up"></i> Escuchar:
+            </strong>
+            <i id="playBtn" class="far fa-play-circle" onclick="javascript:play(this)"></i>
+            <i class="far fa-stop-circle" onclick="javascript:stop(this)"></i>
         </p>
-            <script>
-                var play = function(){
-                    console.log("Play pressed")
-                    var msg = new SpeechSynthesisUtterance('Hello World');
-                    msg.text = 'Estudiosos señalan su origen en el periodo de dominación romana, al ser éstos los primeros en plantar viñedos y los transmisores de su amor por este cultivo, y con ellos llegaría también la conservación de vinos en subterráneos. \n\n El subsuelo de Tomelloso se presta para que sus hombres realicen estas cuevas sin más técnica que sus cualidades en un trabajo bien hecho, ayudados por mujeres –llamadas terreras- encargadas de trasladar la tierra y la arena extraídas del interior hasta la superficie, que en muchos casos se venía aprovechando para el pavimento de calles o para levantar sus propias casas. Los “picaores”, con aguzados picos, horadaban el subsuelo hasta lograr unas naves con bóvedas en arco de medio punto.';
-                    msg.lang = 'es-ES';
-                    window.speechSynthesis.speak(msg);
-                }
-                // window.speechSynthesis.pause()
-
-            </script>
         <div class="speech">
         <p>
             Estudiosos señalan su origen en el periodo de dominación romana, al ser éstos

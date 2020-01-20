@@ -86,8 +86,14 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
         <iframe src="https://www.youtube.com/embed/videoseries?list=PLwB9KstFgABvA4Q27T6MGmcmA5O2ecBvI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
     </div>
     <div class="textos">
-        <p><strong><i class="far fa-clock"></i> Tiempo de lectura aproximada:</strong> <span id="readingTime">X</span></p>
-
+        <p>
+            <strong><i class="far fa-clock"></i> Tiempo de lectura aproximada:</strong> <span id="readingTime">X</span> |
+            <strong>
+                <i class="fas fa-volume-up"></i> Escuchar:
+            </strong>
+            <i id="playBtn" class="far fa-play-circle" onclick="javascript:play(this)"></i>
+            <i class="far fa-stop-circle" onclick="javascript:stop(this)"></i>
+        </p>
         <div class="speech">
             <p>Las chimeneas de las antiguas fábricas de alcohol son grandiosos monolitos que decoran el paisaje urbano de la ciudad.</p>
             <p>En la época de apogeo llegaron a funcionar en Tomelloso más de cien. Con una altura de hasta 45 metros, servían para dar salida al humo de las grandes calderas que, mediante la combustión de leña o carbón, proporcionaban la temperatura adecuada para el funcionamiento del serpentín de destilación de las antiguas alcoholeras.</p>

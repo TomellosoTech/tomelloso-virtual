@@ -599,7 +599,41 @@ window.calcRT = ev => {
 	};
     if($("#readingTime")){
         calcRT($(".speech").text())
+    }
 
+    var synth = window.speechSynthesis;
 
+    var msg = new SpeechSynthesisUtterance('Hello World');
+    msg.text = $('.speech').text();
+    msg.lang = 'es-ES';
+    synth.cancel()
+
+    window.play = function(el){
+        if(synth.speaking && !synth.paused){
+            console.log("Play pressed (is speaking)")
+            $(el).removeClass("fa-pause-circle");
+            $(el).addClass("fa-play-circle");
+            synth.pause()
+        }else if(synth.paused){
+            console.log("Play pressed (is paused)")
+
+            $(el).removeClass("fa-play-circle");
+            $(el).addClass("fa-pause-circle");
+            synth.resume()
+        }else{
+            console.log("Play pressed (is not initializated)")
+            synth.speak(msg);
+            $(el).removeClass("fa-play-circle");
+            $(el).addClass("fa-pause-circle");
+        }
+    }
+    window.stop = function(el){
+        console.log("Stop pressed (cancel)")
+        synth.cancel()
+        $("#playBtn").removeClass("fa-pause-circle");
+        $("#playBtn").addClass("fa-play-circle");
+        var msg = new SpeechSynthesisUtterance('Hello World');
+        msg.text = $('.speech').text();
+        msg.lang = 'es-ES';
     }
 })(jQuery);
