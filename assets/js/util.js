@@ -610,6 +610,10 @@ window.replaceByAction = el => {
 
     var msg = new SpeechSynthesisUtterance('Hello World');
     msg.text = $('.speech').text();
+    msg.text = msg.text.replace(/XVIII/g, 'dieciocho');
+    msg.text = msg.text.replace(/XIX/g, 'diecinueve');
+    msg.text = msg.text.replace(/XX/g, 'veinte');
+    msg.text = msg.text.replace(/XXI/g, 'veintiuno');
     msg.lang = 'es-ES';
     synth.cancel()
 
