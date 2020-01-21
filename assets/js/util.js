@@ -12,6 +12,12 @@ window.calcRT = ev => {
     console.log(result);
 };
 
+window.replaceByAction = el => {
+        let action = $(el).attr("data-action");
+        let parent = $(el).parent();
+        parent.html(decodeURIComponent(action));
+};
+
 (function($) {
 
 	/**

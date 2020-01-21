@@ -2,6 +2,27 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
 
 /*
+    VIDEOS
+*/
+
+#intro-video{
+    background-image: url(../../images/thumb-video/landing.jpg);
+    width: 560px;
+    height: 310px;
+    display: inline-block;
+}
+#intro-video .fa-play-circle{
+    margin-top: 5rem;
+}
+.hidden{
+    display: none;
+}
+.video-placeholder .fa-play-circle{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 10rem;
+}
+
+/*
 	Customization TomellosoTech
 	tomellosotech.org | @TomellosoTech
 */
