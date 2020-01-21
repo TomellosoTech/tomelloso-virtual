@@ -8,12 +8,12 @@
 html{
     scroll-behavior: smooth;
 }
-.far.fa-play-circle,
+.textos.far.fa-play-circle,
 .far.fa-pause-circle,
 .far.fa-stop-circle{
     cursor: pointer;
 }
-.far.fa-play-circle:hover,
+.textos.far.fa-play-circle:hover,
 .far.fa-pause-circle:hover,
 .far.fa-stop-circle:hover{
     color: #f56a6a;
