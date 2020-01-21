@@ -20,6 +20,15 @@
 #bodegas-video{
     background-image: url(../../images/thumb-video/bodegas.jpg)
 }
+#museo-del-carro-video{
+    background-image: url(../../images/thumb-video/museo-del-carro.jpg)
+}
+#chimeneas{
+    background-image: url(../../images/thumb-video/chimeneas.jpg)
+}
+#museo-infanta-elena{
+    background-image: url(../../images/thumb-video/museo-infanta-elena.jpg)
+}
 #intro-video .fa-play-circle{
     margin-top: 5rem;
 }
@@ -179,10 +188,16 @@ a.map:hover {
 }
 
 @media screen and (max-width: 480px) and (orientation: portrait) {
-	iframe {
+	iframe,
+    #intro-video,
+    .video-placeholder {
 		width: 100%;
 		height: 250px;
 	}
+    #intro-video .fa-play-circle{
+        margin-top: 4rem;
+        font-size: 8rem;
+    }
 	.upcoming {
 		top: 140px;
 	}
