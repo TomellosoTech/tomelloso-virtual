@@ -600,7 +600,6 @@ window.replaceByAction = el => {
 					}
 
 			});
-
 	};
     if($("#readingTime")){
         calcRT($(".speech").text())
@@ -657,3 +656,39 @@ $(document).ready(function(){
     });
     console.log("Entro=",$('.video-placeholder'))
 })
+
+$(document).euCookieLawPopup().init({
+  cookiePolicyUrl : 'http://www.tomelloso.es/index.php/politica-de-privacidad-y-cookies/1687-politica-de-privacidad-y-cookies',
+  popupTitle : 'Este sitio usa cookies',
+  popupText : 'Utilizamos cookies para asegurar que damos la mejor experiencia al usuario en nuestro sitio web. Si continúa utilizando este sitio asumiremos que está de acuerdo. Para saber más sobre las cookies que utilizamos y cómo borrarlas, visite nuestra política de privacidad o contacte con nosotros por email.',
+  buttonContinueTitle : 'Continuar',
+  buttonLearnmoreTitle : 'Saber más',
+  buttonLearnmoreOpenInNewWindow : true,
+  agreementExpiresInDays : 30,
+  popupPosition : 'bottom',
+  autoAcceptCookiePolicy : false,
+  htmlMarkup : null
+});
+
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+function initialiseGoogleAnalytics() {
+  gtag('js', new Date());
+  gtag('config', 'UA-118572463-4');
+}
+
+// Subscribe for the cookie consent events
+$(document).bind("user_cookie_already_accepted", function(event, object) {
+  initialiseGoogleAnalytics();
+});
+
+$(document).bind("user_cookie_consent_changed", function(event, object) {
+  const userConsentGiven = $(object).attr('consent');
+  if (userConsentGiven) {
+    // User clicked on enabling cookies. Now it's safe to call the
+    // init functions.
+    initialiseGoogleAnalytics();
+  }
+});
