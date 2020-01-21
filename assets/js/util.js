@@ -19,7 +19,6 @@ window.replaceByAction = el => {
 };
 
 (function($) {
-
 	/**
 	 * Generate an indented list of links from a nav. Meant for use with panel().
 	 * @return {jQuery} jQuery object.
@@ -643,3 +642,14 @@ window.replaceByAction = el => {
         msg.lang = 'es-ES';
     }
 })(jQuery);
+
+$(document).ready(function(){
+    $('.video-placeholder').click(function(evt){
+        console.log("Pressed");
+        evt.stopImmediatePropagation();
+        evt.preventDefault();
+        replaceByAction(this);
+        return false;
+    });
+    console.log("Entro=",$('.video-placeholder'))
+})
