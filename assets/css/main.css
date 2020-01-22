@@ -11,6 +11,16 @@
     height: 310px;
     display: inline-block;
 }
+.fill{
+    width: 100%;
+}
+.mb0,
+hr.major.mb0{
+    margin-bottom: 0;
+}
+hr.major.mb1-5{
+    margin-bottom: 1.5em;
+}
 #lopez-torres-video{
     background-image: url(../../images/thumb-video/museo-lopez-torres.jpg)
 }
