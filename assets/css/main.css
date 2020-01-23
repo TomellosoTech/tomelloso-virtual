@@ -11,6 +11,17 @@
     height: 310px;
     display: inline-block;
 }
+#partners img{
+    max-height: 100px;
+    width: auto;
+    display: inline-block;
+}
+.button.no-border{
+    border: white;
+}
+#partners h3{
+    display: none;
+}
 .fill{
     width: 100%;
 }
