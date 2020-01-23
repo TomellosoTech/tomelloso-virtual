@@ -11,6 +11,12 @@
     height: 310px;
     display: inline-block;
 }
+#instrucciones-gafas{
+    background-image: url(../../images/thumb-video/instrucciones-gafas.jpg);
+    width: 560px;
+    height: 310px;
+    display: inline-block;
+}
 #partners img{
     max-height: 100px;
     width: auto;
@@ -32,6 +38,12 @@ hr.major.mb0{
 hr.major.mb1-5{
     margin-bottom: 1.5em;
 }
+.pt0 {
+    padding-top: 0 !important;
+}
+.no-border{
+    border:0 !important;
+}
 #lopez-torres-video{
     background-image: url(../../images/thumb-video/museo-lopez-torres.jpg)
 }
@@ -50,7 +62,8 @@ hr.major.mb1-5{
 #museo-infanta-elena{
     background-image: url(../../images/thumb-video/museo-infanta-elena.jpg)
 }
-#intro-video .fa-play-circle{
+#intro-video .fa-play-circle,
+#instrucciones-gafas .fa-play-circle{
     margin-top: 5rem;
 }
 .hidden{
