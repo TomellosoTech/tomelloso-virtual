@@ -17,6 +17,9 @@
     height: 310px;
     display: inline-block;
 }
+#banner{
+    position: relative;
+}
 #partners img{
     max-height: 100px;
     width: auto;
@@ -37,6 +40,9 @@ hr.major.mb0{
 }
 hr.major.mb1-5{
     margin-bottom: 1.5em;
+}
+.mt1 {
+    margin-top: 1rem !important;
 }
 .pt0 {
     padding-top: 0 !important;
@@ -95,18 +101,50 @@ html{
 .acenter{
     text-align: center;
 }
-.full-screen{
-    border: 2px solid #f56969;
-    padding: 0px 5px;
-    border-radius: 0.375em;
-    position: absolute;
-    background: rgba(255, 255, 255, .9);
-    top: 5px;
-    right: 22px;
+.iframe-actions .button:hover{
+    background-color: white;
+}
+
+@media screen and (min-width: 481px) {
+    .full-screen,
+    .instruccions{
+        border: 2px solid #f56969;
+        padding: 0px 5px;
+        border-radius: 0.375em;
+        position: absolute;
+        background: rgba(255, 255, 255, .9);
+        top: 5px;
+        right: 22px;
+    }
+    .instruccions{
+        top: 47px;
+    }
+    .iframe-actions{
+        position: absolute;
+        right: 0;
+        z-index: 14;
+        margin-top: 5px;
+        margin-right: -10px;
+    }
+    .iframe-actions a{
+        background-color: white;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
 }
 /*  Mobile and Tablet portrait ----------- */
 @media screen and (orientation: portrait) {
-    .full-screen{
+    .iframe-actions a{
+        margin-top:1rem;
+        width: 100%;
+    }
+    .iframe-actions a:last-child{
+        margin-bottom: 2rem;
+    }
+    /* .full-screen,
+    .instruccions{
         position: absolute;
         top: 7px;
         bottom: inherit;
@@ -116,11 +154,21 @@ html{
         width: 100%;
         padding: .3rem;
     }
+    .instruccions{
+        top: 49px;
+    }
+    */
     .full-screen::after{
         content: ' Ver a pantalla completa'
     }
+    .instruccions::after{
+        content: ' Ver instrucciones'
+    }
     .iframe-container, .iframe-container.tour{
         margin: 0 0 4rem;
+    }
+    .iframe-container.tour{
+        margin-bottom: 0;
     }
 }
 .full-screen a{
@@ -163,6 +211,9 @@ html{
 }
 .pt4{
     padding-top:4em !important;
+}
+.mt2-5{
+    margin-top: 2.5rem
 }
 .map {
 	display: block;
@@ -302,7 +353,7 @@ a.map:hover {
         font-size: 8rem;
     }
 	.upcoming {
-		top: 140px;
+		top: 130px;
 	}
     .iframe-container,
     .iframe-container.tour{
